@@ -1,0 +1,28 @@
+.BoxContent{
+  width: 100%;
+  .boxInput{
+    margin: .4rem auto 0;
+    width: 88%;
+    border: 1px solid #cccccc;
+    line-height: .73rem;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    span{
+      font-size: .26rem;
+    }
+    .flex1{
+      flex: 1;
+    }
+    .flex2{
+      flex: 8;
+    }
+    .flex3{
+      flex: 10;
+    }
+    .flex4{
+      flex: 2;
+      //background: url('../../../assets/images/dateIcon.png') no-repeat center center;
+    }
+  }
+}

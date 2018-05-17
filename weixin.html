@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+<script src="./openId.js"></script>
+<script>
+    getOpenId({
+        IPLocation: 'http://test.jklife.com:8888/jkds/openId/getOpenIdByChannel', //测试接口地址
+//        IPLocation: 'https://dswx.jklife.com:9443/jkds/openId/getOpenIdByChannel', //生产
+        redirect_uri: window.location.href, //回调地址
+        inlet: {   //多入口进入地址
+            'index':"0.0.1/"
+        },
+//        appid: "wxe7be31d880fc6850"  //微信的appid 生产 （切换生产时，注意分享的页面也需要更换）
+      appid: "wx56b138d07022146e"  //微信的appid 公众号测试 （切换生产时，注意分享的页面也需要更换）
+    });
+    //http://****/weixin.html?jack=home
+</script>
+</body>
+</html>
